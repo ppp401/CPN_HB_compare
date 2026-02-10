@@ -81,7 +81,7 @@ def analyze_observables(observables):
 
 if __name__ == "__main__":
     N = 2
-    L = 20
+    L = 30
 
     therm = 500
     meas = 5000
@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     run_times = 10
     n_workers = 10
-    beta_alpha_list = [(b, 0.5) for b in np.arange(5,21)/10]
+    beta_alpha_list = [(b, 0) for b in np.arange(5,21)/10]
     for beta, alpha in beta_alpha_list:
         print(f"beta = {beta}, alpha = {alpha}:")
         args = (True, L, L, N, beta, alpha, therm, meas, hb_frac)
