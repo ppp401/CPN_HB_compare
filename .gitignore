@@ -1,0 +1,10 @@
+# system files and folders
+.DS_Store
+__pycache__/
+.vscode/
+
+# data and figures
+/data/*
+!/data/.gitkeep
+/figures/*
+!/figures/.gitkeep
